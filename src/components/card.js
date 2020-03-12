@@ -21,7 +21,7 @@ const Card = (props) => {
                                 : header.toLowerCase() === "team builder" ? teamBuilder
                                 : header.toLowerCase() === "karma" ? karma
                                     : header.toLowerCase() === "calculator" ? calculator : null}
-                        alt="" className="content__card-image"/>
+                        alt={header} className="content__card-image"/>
                 </div>
             </div>
         </div>

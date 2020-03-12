@@ -16,4 +16,17 @@ $Very-Light-Gray: hsl(0, 0%, 98%);
 $copy-font: 15px;
 // <--
 
-@import 'normalize';
+//@import 'normalize';
+@import 'mediaQueries';
+@import 'header';
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Poppins, sans-serif;
+}
+.container{
+  margin: 0 auto;
+  max-width: 91.2%;
+}
