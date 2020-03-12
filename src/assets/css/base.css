@@ -13,12 +13,38 @@
     font-size: 15px;
     text-align: center; }
 
+.content {
+  padding-top: 85px; }
+  .content__card {
+    border-top: 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -5px rgba(110, 170, 170, 0.3);
+    min-height: 221px;
+    margin-bottom: 24px;
+    padding: 35px 26px 0; }
+    .content__card--red {
+      border-color: #ea5353; }
+    .content__card--cyan {
+      border-color: #45d3d3; }
+    .content__card--blue {
+      border-color: #549ef2; }
+    .content__card--orange {
+      border-color: #fcaf4a; }
+  .content__card-header {
+    font-size: 18px; }
+  .content__card-image-wrapper {
+    padding-top: 40px;
+    text-align: right; }
+  .content__card-image {
+    width: 58px; }
+
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: Poppins, sans-serif; }
+  font-family: Poppins, sans-serif;
+  font-size: 15px; }
 
 .container {
   margin: 0 auto;
