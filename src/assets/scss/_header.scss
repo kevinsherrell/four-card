@@ -1,0 +1,17 @@
+.header{
+  padding-top: 91px;
+  &__primary{
+    font-size: 23px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+  &__secondary{
+    font-size: 23px;
+    text-align: center;
+  }
+  &__intro{
+    font-size: $copy-font;
+    text-align: center;
+  }
+}
