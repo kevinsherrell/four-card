@@ -7,7 +7,13 @@ import teamBuilder from '../assets/images/icon-team-builder.svg'
 const Card = (props) => {
     const {header, bodyText} = props
     return (
-        <div className="content__card">
+        <div className={`content__card ${ 
+            header.toLowerCase() === "team builder" ? "content__card--red"
+                : header.toLowerCase() === "supervisor" ? "content__card--cyan"
+                : header.toLowerCase() === "calculator" ? "content__card--blue"
+                    : header.toLowerCase() === "karma" ? "content__card--orange"
+                        : null
+        }`}>
             <div className="content__card-inner-wrapper">
                 <h1 className="content__card-header">
                     {header}
