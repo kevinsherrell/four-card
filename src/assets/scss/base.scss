@@ -34,6 +34,11 @@ body {
   max-width: 91.2%;
 }
 
+@include responsive($tablet-landscape){
+  .container{
+    max-width: 55%;
+  }
+}
 @include responsive($large-desktop) {
   .container {
     max-width: 88%;
