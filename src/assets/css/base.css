@@ -1,27 +1,61 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 15px; }
+
+.container {
+  margin: 0 auto;
+  max-width: 91.2%; }
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 88%; } }
+
 .header {
-  padding-top: 91px; }
+  padding-top: 91px;
+  padding-left: 20px;
+  padding-right: 20px; }
   .header__primary {
     font-size: 23px;
     font-weight: 200;
     text-align: center;
-    margin-bottom: 21px; }
+    padding-bottom: 18px; }
   .header__secondary {
     font-size: 23px;
     text-align: center; }
   .header__intro {
+    padding-top: 32px;
     font-size: 15px;
-    text-align: center; }
+    text-align: center;
+    color: grey;
+    opacity: .6; }
+
+@media only screen and (min-width: 1440px) {
+  .header__primary {
+    font-size: 35px; }
+  .header__secondary {
+    font-size: 35px; }
+  .header__intro {
+    padding-left: 30%;
+    padding-right: 30%; } }
 
 .content {
-  padding-top: 85px; }
+  margin-top: 85px; }
+  .content__card-wrapper {
+    background-color: pink; }
   .content__card {
-    border-top: 2px solid;
+    border-top: 4px solid;
     border-radius: 5px;
     box-shadow: 0px 10px 10px -5px rgba(110, 170, 170, 0.3);
     min-height: 221px;
     margin-bottom: 24px;
-    padding: 35px 26px 0; }
+    padding: 35px 26px 27px; }
     .content__card--red {
       border-color: #ea5353; }
     .content__card--cyan {
@@ -32,20 +66,26 @@
       border-color: #fcaf4a; }
   .content__card-header {
     font-size: 18px; }
+  .content__card-copy {
+    color: grey;
+    opacity: .6; }
   .content__card-image-wrapper {
     padding-top: 40px;
     text-align: right; }
   .content__card-image {
     width: 58px; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: Poppins, sans-serif;
-  font-size: 15px; }
-
-.container {
-  margin: 0 auto;
-  max-width: 91.2%; }
+@media only screen and (min-width: 1024px) {
+  .content {
+    margin-top: 70px; }
+    .content .container {
+      display: flex;
+      justify-content: center; }
+    .content__card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .content__card-container:nth-child(2) {
+        margin: 0 30px; }
+    .content__card {
+      max-width: 345px; } }

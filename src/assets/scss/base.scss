@@ -1,12 +1,13 @@
+@import 'mediaQueries';
 // fonts
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
 // colors -->
-  // Primary
+// Primary
 $Red: hsl(0, 78%, 62%);
 $Cyan: hsl(180, 62%, 55%);
 $Orange: hsl(34, 97%, 64%);
 $Blue: hsl(212, 86%, 64%);
-  // Neutral
+// Neutral
 $Very-Dark-Blue: hsl(234, 12%, 34%);
 $Grayish-Blue: hsl(229, 6%, 66%);
 $Very-Light-Gray: hsl(0, 0%, 98%);
@@ -16,19 +17,28 @@ $Very-Light-Gray: hsl(0, 0%, 98%);
 $copy-font: 15px;
 // <--
 
-//@import 'normalize';
-@import 'mediaQueries';
-@import 'header';
-@import 'content';
-*{
+@import 'normalize';
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-body{
+
+body {
   font-family: Poppins, sans-serif;
   font-size: $copy-font;
 }
-.container{
+
+.container {
   margin: 0 auto;
   max-width: 91.2%;
 }
+
+@include responsive($large-desktop) {
+  .container {
+    max-width: 88%;
+  }
+}
+
+@import 'header';
+@import 'content';

@@ -1,13 +1,23 @@
 .content {
-  padding-top: 85px;
+  margin-top: 85px;
   //text-align: center;
+
+  &__card-container {
+    //background-color: green;
+  }
+
+  &__card-wrapper {
+    //display: flex;
+    background-color: pink;
+  }
+
   &__card {
-    border-top: 2px solid;
+    border-top: 4px solid;
     border-radius: 5px;
     box-shadow: 0px 10px 10px -5px rgba(110, 170, 170, .3);
     min-height: 221px;
     margin-bottom: 24px;
-    padding: 35px 26px 0;
+    padding: 35px 26px 27px;
 
     &--red {
       border-color: $Red;
@@ -24,12 +34,17 @@
     &--orange {
       border-color: $Orange;
     }
+
   }
 
   &__card-header {
     font-size: 18px;
   }
 
+&__card-copy{
+  color: grey;
+  opacity: .6;
+}
   &__card-image-wrapper {
     padding-top: 40px;
     text-align: right;
@@ -38,5 +53,29 @@
   &__card-image {
     width: 58px;
 
+  }
+}
+
+@include responsive($large-desktop) {
+  .content {
+    margin-top: 70px;
+    .container {
+      display: flex;
+      //background-color: pink;
+      justify-content: center;
+    }
+
+    &__card-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &:nth-child(2){
+        margin: 0 30px;
+      }
+    }
+
+    &__card {
+      max-width: 345px;
+    }
   }
 }
