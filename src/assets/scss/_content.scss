@@ -41,10 +41,11 @@
     font-size: 18px;
   }
 
-&__card-copy{
-  color: grey;
-  opacity: .6;
-}
+  &__card-copy {
+    color: grey;
+    opacity: .6;
+  }
+
   &__card-image-wrapper {
     padding-top: 40px;
     text-align: right;
@@ -55,13 +56,15 @@
 
   }
 }
-@include responsive($tablet-landscape){
+
+@include responsive($tablet-landscape) {
 
 }
 
 @include responsive($large-desktop) {
   .content {
     margin-top: 70px;
+
     .container {
       display: flex;
       //background-color: pink;
@@ -72,7 +75,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      &:nth-child(2){
+
+      &:nth-child(2) {
         margin: 0 30px;
       }
     }
